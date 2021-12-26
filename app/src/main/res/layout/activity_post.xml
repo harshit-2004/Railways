@@ -7,6 +7,19 @@
     tools:context=".PostActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item"
+        tools:itemCount="10"
+        tools:orientation="vertical"
+        tools:scrollbars="vertical"
+        tools:spanCount="3"/>
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="409dp"
         android:layout_height="729dp"
@@ -18,6 +31,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/post" />
-
+        tools:listitem="@layout/item"
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>
